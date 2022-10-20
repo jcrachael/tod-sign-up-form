@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200;300;400;600;900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap');
+
+body {
+    display: flex;
+    font-family: 'Lato', sans-serif;
+    background-color: #eee;
+    margin: 0;
+    padding: 0;
+}
+
+#background-img {
+    height: 100vh;
+    min-width: 450px;
+    width: 33vw;
+    background-image: url("img.jpg");
+    
+}
+.shadow {
+    background-color: rgba(0,0,0,0.5);
+    margin-top: 55%;
+    height: 200px;
+
+}
+
+#logo {
+  
+    display: flex;
+    align-items: center;
+    margin-top: -200px;
+    justify-content: center;
+    
+}
+#logo-img {
+    max-width: 200px;
+}
+
+#img-credit {
+    position: fixed;
+    bottom: 0;
+    height: 30px;
+    min-width: 450px;
+    width: 33vw;
+    color: #fff;
+    font-family: 'Source Code Pro', monospace;
+    font-size: 8pt;
+    font-weight: 100;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#img-credit > p {
+    text-align: center;
+}
+
+#img-credit > p > a {
+    
+    color: #fff;
+
+}
+
+h1 {
+    color: #fff;
+    margin-left: -35px;
+    font-family: 'Source Code Pro', monospace;
+    text-transform: uppercase;
+    font-size: 72pt;
+    line-height: 1px;
+    font-weight: 600;
+}
+
+#content {
+
+    margin-top: auto;
+    margin-bottom: auto;
+   
+    
+}
+#content > h2 {
+    max-width: 49vw;
+}
+#content > h2, #content > p {
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+form {
+ 
+    margin: 0;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    background-color: #fff;
+    padding-top: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 20px;
+    box-shadow: 5px 5px 5px #ccc;
+}
+
+legend {
+    font-weight: bold;
+    font-size: 16pt;
+    padding-bottom: 20px;
+}
+
+button {
+    margin-left: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
