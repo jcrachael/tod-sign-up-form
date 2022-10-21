@@ -11,45 +11,52 @@
 </head>
 <body>
     <div id="background-img">
-        <div class="shadow"> </div>
-        <div id="logo">
-            <img src="logo-img.svg" alt="Sample logo" id="logo-img">
-            <h1>Odin</h1>
-        
-    </div>
+        <div class="shadow"> 
+            <div id="logo">
+                <img src="logo-img.svg" alt="Sample logo" id="logo-img">
+                <h1>Odin</h1>
+            </div>
+        </div>
         <div id="img-credit">
            <p>Background image by <a href="https://unsplash.com/@marcinjozwiak?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Marcin Jozwiak</a> on <a href="https://unsplash.com/t/wallpapers?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></p>
-            
-          
         </div>
     </div>
     <div id="content">
         <h2>This is not a real online service! And yet, you know you want to fill out this form. It might just be the thing that helps you realise your deepest dreams.<br>
         Sign up <em>now</em> to get started.</h2>
         <h2>Like I said... You know you want to.</h2>
-        <br><form action="#">
-            <legend>Let's do this!</legend>
-            <label for="first_name">First name</label>
-            <input type="text" name="first_name" id="first_name" placeholder="John">
+        <br>
+        <form action="" id="my-form">
+            <div id="left-col">
+                <p id="form-title">Let's do this!</p>
+                <label for="first_name">First name *</label>
+                <input type="text" name="first_name" id="first_name" placeholder="John" required><br>
+                <label for="user_email">Email *</label>
+                <input type="email" name="user_email" id="user_email" placeholder="you@example.com" required><br>
+                <label for="user_password">Password *</label>
+                <input type="password" name="user_password" id="user_password" required>
+                
+            </div>
 
-            <label for="last_name">Last name</label>
-            <input type="text" name="last_name" id="last_name" placeholder="Citizen">
-<br>
-            <label for="user_email">Email</label>
-            <input type="email" name="user_email" id="user_email" placeholder="you@example.com">
-            
+            <div id="right-col">
+
+                <label for="last_name">Last name *</label>
+            <input type="text" name="last_name" id="last_name" placeholder="Citizen" required><br>
             <label for="phone_number">Phone number</label>
-            <input type="tel" name="phone_number" id="phone_number">
-<br>
-            <label for="user_password">Password</label>
-            <input type="password" name="user_password" id="user_password">
+            <input type="tel" name="phone_number" id="phone_number" placeholder="+61 432 123 456"><br>
+            <label for="user_confirm_password">Confirm password *</label>
+            <input type="password" name="user_confirm_password" id="user_confirm_password" required>
 
-            <label for="user_confirm_password">Confirm password</label>
-            <input type="password" name="user_confirm_password" id="user_confirm_password">
+            </div>
+
+            
 
         </form>
-        <button type="submit">Create Account</button>
-        <p>Already have an account? <a href="#">Log in</a></p>
+        <div id="error">
+            
+        </div>
+        <button type="submit" id="submit-btn">Create Account</button>
+        <p id="log-in">Already have an account? <a href="#">Log in ></a></p>
     </div>
 </body>
 </html>
