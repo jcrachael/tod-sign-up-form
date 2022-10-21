@@ -77,6 +77,8 @@ h1 {
 
 #content {
     width: 100%;
+    height: calc(100vh-30px);
+    padding: 50px 0px;
     margin-top: auto;
     margin-bottom: auto;
 }
@@ -191,3 +193,30 @@ button:hover {
     padding: 0;
     color: red;
 }
+
+#footer-wrap {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 5px;
+    width: 70vw;
+    position: fixed;
+    bottom: 0;
+}
+
+footer {
+ 
+    justify-content: center;
+    width: 330px;
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 12px;
+    color: rgb(29, 29, 29);
+  }
+  
+  footer a {
+    color: #9642A3;
+  }
+  
+  footer a:hover {
+    color: #4F2356;
+  }
